@@ -40,7 +40,7 @@ class NativeBayes{
 
 $features =array('Education'=>'9th','Work'=>32,'Disease'=>'Bronchitis','Salary'=>3000);
 //$features =array('Education'=>'Doctorate','Work'=>44,'Disease'=>'Bronchitis','Salary'=>3000);
-$X=array('Education'=>'12th','Work'=>35,'Disease'=>'Flu','Salary'=>2000);
+
 echo NativeBayes::classify('table1',$features,'Sex');
 
 /*
