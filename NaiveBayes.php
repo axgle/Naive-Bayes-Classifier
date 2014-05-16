@@ -1,6 +1,6 @@
 <?php
 // based on https://github.com/axgle/Naive-Bayes-Classifier
-class NativeBayes{
+class NaiveBayes{
 	static function classify($table,$features,$category){
 		$db=new pdo("mysql:dbname=bayes","root","root");
 		$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE,PDO::FETCH_ASSOC);
@@ -41,7 +41,7 @@ class NativeBayes{
 $features =array('Education'=>'9th','Work'=>32,'Disease'=>'Bronchitis','Salary'=>3000);
 //$features =array('Education'=>'Doctorate','Work'=>44,'Disease'=>'Bronchitis','Salary'=>3000);
 
-echo NativeBayes::classify('table1',$features,'Sex');
+echo NaiveBayes::classify('table1',$features,'Sex');
 
 /*
 CREATE TABLE IF NOT EXISTS `table1` (
